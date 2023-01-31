@@ -1,15 +1,12 @@
-
 import './App.css';
-import Navigation from './pages/navigation/navigation.page';
+// import Navigation from './pages/navigation/navigation.page';
+import Button from './components/button/button.component';
 
 
 function App() {
   return (
     <div>
-    <Navigation/>
-    
-
-
+    <Button />
     </div>
       
   );
