@@ -1,0 +1,57 @@
+
+
+
+
+.option{
+    margin-left: 10px;
+}
+
+.collection-filter-container{
+   background-color: blue;
+   height: 30px;
+    gap: 15%;
+    text-align: center;
+    width: 100%;
+}
+
+.brand-filter-container{
+     visibility: hidden;
+     margin-top: 9px;
+     background-color: red;
+     height: 30px;
+     gap: 15%;
+     text-align: center;
+     width: 100%;
+     
+     &:hover{
+        
+     }
+}
+
+#a:hover ~ #brand {
+    visibility: visible;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  

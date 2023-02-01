@@ -1,6 +1,6 @@
 
 .button{
-  /* background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
   border-radius: 999px;
   box-shadow: rgba(0,212,255,1) 0 5px 5px -5px;
   box-sizing: border-box;
@@ -18,14 +18,14 @@
   touch-action: manipulation;
   width: fit-content;
   word-break: break-word;
-  border: 0; */
-  background-color: blue;
+  border: 0; 
+  
   
 };
 
 .button:hover {
-    /* background: rgba(0,212,255,1);
-    box-shadow: white 0 5px 5px -5px;
-    color: white; */
-    background-color: black;
+     background: rgba(0,212,255,1);
+    box-shadow: black 0 5px 5px -5px;
+    color: white;
+    
 };

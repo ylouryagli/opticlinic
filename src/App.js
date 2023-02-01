@@ -1,13 +1,20 @@
 import './App.css';
-// import Navigation from './pages/navigation/navigation.page';
-import Button from './components/button/button.component';
+import Collection from './sections/collection-filter/collection-filter.section';
+
+
 
 
 function App() {
   return (
     <div>
-    <Button />
+      
+     <Collection/>
+
+      
+   
+    
     </div>
+    
       
   );
 }

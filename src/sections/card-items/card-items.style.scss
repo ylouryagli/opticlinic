@@ -1,0 +1,16 @@
+
+@media only screen and (max-width: 600px){
+    .grid-wrapper{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+.grid-wrapper{
+    margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+//   grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+
+}

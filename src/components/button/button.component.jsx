@@ -1,9 +1,9 @@
-import "./button.style.css";
+import "./button.style.scss";
 
-const Button = () => {
+const Button = ({children}) => {
     return (
         <button className="button">
-            check
+            {children}
         </button>
     )
 
