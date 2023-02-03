@@ -1,5 +1,5 @@
 import './App.css';
-import Collection from './sections/collection-filter/collection-filter.section';
+import CollectionFilter from './sections/collection-filter/collection-filter.section';
 
 
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
     
-   <Collection/>
+   <CollectionFilter/>
      
 
 
