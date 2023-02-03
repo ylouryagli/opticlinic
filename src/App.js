@@ -1,5 +1,5 @@
 import './App.css';
-import CollectionFilter from './sections/collection-filter/collection-filter.section';
+import Contact from './pages/contact/contact.page.jsx';
 
 
 
@@ -9,11 +9,7 @@ function App() {
   return (
     <div>
     
-   <CollectionFilter/>
-     
-
-
-   
+   <Contact/>
     
     </div>
     

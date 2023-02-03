@@ -1,0 +1,70 @@
+.page{
+    height:600px;
+    background: linear-gradient(90deg, rgba(109,237,216,1) 0%, rgba(76,219,192,1) 30%, rgba(0,212,255,1) 100%);
+
+}
+.contact-section{
+    text-align: center;
+
+
+}
+
+.contactcards{
+    // background-color: black;
+    display: flex;
+    column-gap: 5%;
+    margin: 50px;
+    justify-content: center;
+    
+}
+.logo{
+    text-align: center;
+    margin-top: 50px ;
+}
+.header{
+    text-align: center;
+    margin-top: 55px;
+}
+
+
+
+.contactcard-WP{
+    height:300px;
+    width: 250px;
+    background-color: white;
+    border-style: solid;
+    border-color:rgba(0,212,255,1);
+    box-shadow: rgb(76, 88, 90) 0 5px 5px -5px;
+}
+
+
+.contactcard-email{
+    height:300px;
+    width: 250px;
+    background-color: white;
+    border-style: solid;
+    border-color:rgba(0,212,255,1);
+    box-shadow: rgb(76, 88, 90) 0 5px 5px -5px;
+
+}
+
+.contactcard-phone{
+    height:300px;
+    width: 250px;
+    background-color: white;
+    border-style: solid;
+    border-color:rgba(0,212,255,1);
+    box-shadow: rgb(76, 88, 90) 0 5px 5px -5px;
+
+}
+
+.grow{
+    transition: all .2s ease-in-out; 
+    }
+    
+
+.grow:hover{
+    transform: scale(1.1); 
+}
+
+
