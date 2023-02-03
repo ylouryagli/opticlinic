@@ -4,13 +4,15 @@ import Collection from './sections/collection-filter/collection-filter.section';
 
 
 
+
 function App() {
   return (
     <div>
-      
-     <Collection/>
+    
+   <Collection/>
+     
 
-      
+
    
     
     </div>

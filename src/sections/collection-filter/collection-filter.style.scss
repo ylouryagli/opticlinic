@@ -1,57 +1,134 @@
 
-
-
-
 .option{
     margin-left: 10px;
 }
 
 .collection-filter-container{
-   background-color: blue;
-   height: 30px;
+    background-color: rgb(99, 214, 208);
+    height: 50px;
     gap: 15%;
     text-align: center;
     width: 100%;
 }
+.option {
+    align-items: center;
+    background-color: rgb(99, 214, 208);
+    border: 2px solid rgb(99, 214, 208);
+    box-sizing: border-box;
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .option:focus {
+    color: #171e29;
+  }
+  .option:hover {
+    background-color: white;
+    border-color: white;
+    fill: white;
+  }
+  .option:active {
+    background-color: white;
+    border-color: white;
+    fill: white;
+  }
+  @media (min-width: 768px) {
+    .option{
+      min-width: 170px;
+    }
+  } 
 
 .brand-filter-container{
-     visibility: hidden;
-     margin-top: 9px;
-     background-color: red;
-     height: 30px;
+    
+     margin-top: 0px;
+     background-color:  rgb(99, 214, 208);
+     height: 0px;
      gap: 15%;
      text-align: center;
      width: 100%;
+     visibility: hidden;
+
      
      &:hover{
-        
+        visibility: visible;
+        height : 50px;
      }
 }
 
-#a:hover ~ #brand {
-    visibility: visible;
-    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+#a:hover ~ #brand{
+  visibility: visible;
+  height: 50px;
+  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
 }
 
- @-webkit-keyframes slide-bottom {
-    0% {
-      -webkit-transform: translateY(-30px);
-              transform: translateY(-30px);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
+
+#b:hover~ #brand-women{
+  visibility: visible;
+  height: 50px;
+  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+#c:hover~ #brand-children{
+  visibility: visible;
+  height: 50px;
+  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+#d:hover~ #brand-sunglasses{
+  visibility: visible;
+  height: 50px;
+  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ 
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
   }
-  @keyframes slide-bottom {
-    0% {
-      -webkit-transform: translateY(-30px);
-              transform: translateY(-30px);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
   }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
   
