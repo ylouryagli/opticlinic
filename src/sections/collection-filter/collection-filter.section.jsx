@@ -3,11 +3,11 @@ import shopsdata from"../../shop-data.json";
 
 
 
-const CollectionFilter =()=> {
+const CollectionFilter =({clicking})=> {
 
     return(
 
-        <div>
+        <div >
             <div id="collection" className="collection-filter-container">
                     <button id="a" className="option men"> men </button>
                     <button id="b" className="option wom"> women </button>
@@ -21,8 +21,8 @@ const CollectionFilter =()=> {
             shopsdata.map((data)=>{
                 if (data.gender ==="men"){
                     return(
-                    <button  className="option " key={data.id}>{data.brand}</button>)}
-                    return "";
+                    <button onClick={()=>{clicking(data.gender, data.brand)}} className="option " key={data.id}>{data.brand}</button>)}
+                    return ""
             
             })
 
@@ -33,11 +33,11 @@ const CollectionFilter =()=> {
                     shopsdata.map((data)=>{
                         if (data.gender==="women"){
                             return(
-                                <button className="option" key={data.id}>{data.brand}</button>
+                                <button onClick={()=>{clicking(data.gender, data.brand)}} className="option" key={data.id}>{data.brand}</button>
                             )
 
                         }
-                        return "";
+                        return ""
                     })
                 }
             </div>
@@ -46,10 +46,10 @@ const CollectionFilter =()=> {
                  shopsdata.map((data)=>{
                     if (data.gender==="children"){
                         return(
-                            <button className="option" key={data.id}>{data.brand}</button>
+                            <button onClick={()=>{clicking(data.gender, data.brand)}} className="option" key={data.id}>{data.brand}</button>
                         )
                     }
-                    return "";
+                    return ""
                  })
                 }
             </div>
@@ -58,9 +58,9 @@ const CollectionFilter =()=> {
                     shopsdata.map((data)=>{
                         if (data.gender==="sunglasses"){
                         return(
-                            <button className="option" key={data.id}>{data.brand}</button>
+                            <button onClick={()=>{clicking(data.gender, data.brand)}} className="option" key={data.id}>{data.brand}</button>
                         )}
-                        return "";
+                        return ""
                     })
                 }
             </div>

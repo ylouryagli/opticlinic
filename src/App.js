@@ -1,7 +1,6 @@
 import './App.css';
 import Navigation from './pages/navigation/navigation.page.jsx';
-import CollectionFilter from './sections/collection-filter/collection-filter.section';
-import CardItems from './sections/card-items/card-items.section.jsx';
+import Collection from './pages/collection/collection.page';
 
 
 
@@ -12,8 +11,8 @@ function App() {
     <div>
     
    <Navigation/>
-   <CollectionFilter />
-   <CardItems />
+   <Collection/>
+  
    
 
     

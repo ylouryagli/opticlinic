@@ -26,7 +26,7 @@ const CardItem = ({imageUrl, name, size, color, price})=> {
         </div>
      
     )
-     };
+     }
         
 
     

@@ -1,9 +1,7 @@
 import CardItem from "../../components/card-item/card-item.components";
-
 import "./card-items.style.scss";
-import shopsdata from "../../shop-data.json";
 
-const CardItems =()=> {
+const CardItems =({shopsdata})=> {
     return(
         <div className="grid-wrapper">
             {
@@ -15,9 +13,9 @@ const CardItems =()=> {
             name={user.name} 
             price={user.price}
             />
-                );
+                )
                 })
-        };
+        }
 
         </div>
         )
