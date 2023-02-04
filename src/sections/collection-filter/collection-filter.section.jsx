@@ -22,6 +22,7 @@ const CollectionFilter =()=> {
                 if (data.gender ==="men"){
                     return(
                     <button  className="option " key={data.id}>{data.brand}</button>)}
+                    return "";
             
             })
 
@@ -36,6 +37,7 @@ const CollectionFilter =()=> {
                             )
 
                         }
+                        return "";
                     })
                 }
             </div>
@@ -47,16 +49,18 @@ const CollectionFilter =()=> {
                             <button className="option" key={data.id}>{data.brand}</button>
                         )
                     }
+                    return "";
                  })
                 }
             </div>
             <div id="brand-sunglasses" className="brand-filter-container sunglasses">
                 {
                     shopsdata.map((data)=>{
-                        if (data.gender==="sunglasses")
+                        if (data.gender==="sunglasses"){
                         return(
                             <button className="option" key={data.id}>{data.brand}</button>
-                        )
+                        )}
+                        return "";
                     })
                 }
             </div>
