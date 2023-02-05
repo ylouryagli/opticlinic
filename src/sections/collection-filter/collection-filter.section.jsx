@@ -72,7 +72,7 @@ const CollectionFilter =({clicking, brands})=> {
                 
                 })}
                 <div className='filter'>
-                <Button  type='button' handleSubmit={handleSubmit}>submit here</Button>
+                <Button  type='button' handleSubmit={handleSubmit}>Filter</Button>
                 </div>
             
         </form>
