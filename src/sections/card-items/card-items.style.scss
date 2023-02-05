@@ -6,7 +6,8 @@
     }
 }
 .grid-wrapper{
-    margin: 50px;
+    margin: 30px;
+    width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
 //   grid-template-rows: repeat(5, 1fr);

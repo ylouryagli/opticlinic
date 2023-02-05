@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import CardItems from "../../sections/card-items/card-items.section";
 import CollectionFilter from "../../sections/collection-filter/collection-filter.section";
 import SHOPS_DATA from "../../shop-data.json";
+import './collection.style.scss';
 
 
 
@@ -18,11 +19,18 @@ class Collection extends Component {
 
     componentDidMount(){
         this.setState({shopsdata : SHOPS_DATA})
+        
     }
 
-     dataFilter(gender,brand){
-        console.log(gender, brand);
-        this.setState({shopsdata: SHOPS_DATA.filter(data => {if(data.gender===gender && data.brand===brand)return data})})
+     dataFilter(gender,type, brand){
+       console.log(brand)
+        this.setState({shopsdata: SHOPS_DATA.filter(data => 
+           (gender.includes(data.gender) || gender.length === 0) &&
+            (type.includes(data.type) || type.length === 0) &&
+            (brand.includes(data.brand) || brand.length === 0)
+           )
+        })
+        
     } 
   
 
@@ -30,13 +38,12 @@ class Collection extends Component {
    
  render() {
     const { shopsdata }= this.state;
-    
+    const allBrands = SHOPS_DATA.map(data => {return data.brand});
+    const brands = allBrands.filter((item, index) => allBrands.indexOf(item) === index);
     return(
-        <div>
-
-            <CollectionFilter clicking={this.dataFilter}/>
+        <div className='collection-page'>
+            <CollectionFilter clicking={this.dataFilter} brands={brands}/>
             <CardItems shopsdata={shopsdata}/>
-
         </div>
 
     )

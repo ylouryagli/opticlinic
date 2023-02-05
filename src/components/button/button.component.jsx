@@ -1,8 +1,8 @@
 import "./button.style.scss";
 
-const Button = ({children}) => {
+const Button = ({handleSubmit, children}) => {
     return (
-        <button className="button">
+        <button type='button' className="button" onClick={handleSubmit}>
             {children}
         </button>
     )

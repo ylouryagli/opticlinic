@@ -1,136 +1,55 @@
 
-.option{
-    margin-left: 10px;
-}
-
 .collection-filter-container{
-    background-color: rgb(99, 214, 208);
-    height: 50px;
-    gap: 15%;
+  // background-color: blue;
+  margin-top: 30px;
+  width: 20%;
+  height: 85vh;
+  border-right: solid rgba(0,212,255,1);
+}
+
+.filter-heading{
+    padding-top: 10px;
     text-align: center;
-    width: 100%;
-}
-.option {
-    align-items: center;
-    background-color: rgb(99, 214, 208);
-    border: 2px solid rgb(99, 214, 208);
-    box-sizing: border-box;
-    color: hsl(0, 0%, 0%);
-    cursor: pointer;
-    display: inline-flex;
-    fill: #000;
-    font-family: Inter,sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    height: 48px;
-    justify-content: center;
-    letter-spacing: -.8px;
-    line-height: 24px;
-    min-width: 140px;
-    outline: 0;
-    padding: 0 17px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  .option:focus {
-    color: #171e29;
-  }
-  .option:hover {
-    background-color: white;
-    border-color: white;
-    fill: white;
-  }
-  .option:active {
-    background-color: white;
-    border-color: white;
-    fill: white;
-  }
-  @media (min-width: 768px) {
-    .option{
-      min-width: 170px;
-    }
-  } 
-
-.brand-filter-container{
-    
-     margin-top: 0px;
-     background-color:  rgb(99, 214, 208);
-     height: 0px;
-     gap: 15%;
-     text-align: center;
-     width: 100%;
-     visibility: hidden;
-
-     
-     &:hover{
-        visibility: visible;
-        height : 50px;
-     }
-}
-
-
-#a:hover ~ #brand{
-  visibility: visible;
-  height: 50px;
-  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
 }
 
-
-
-#b:hover~ #brand-women{
-  visibility: visible;
-  height: 50px;
-  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-          animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-#c:hover~ #brand-children{
-  visibility: visible;
-  height: 50px;
-  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-          animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-#d:hover~ #brand-sunglasses{
-  visibility: visible;
-  height: 50px;
-  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-          animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.filter{
+  margin-left: 150px;
 }
 
 
- 
-@-webkit-keyframes scale-up-ver-top {
-  0% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
+input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
 }
-@keyframes scale-up-ver-top {
-  0% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
+
+input[type=checkbox] {
+  display: none;
 }
-  
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: rgba(0,212,255,1);
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
